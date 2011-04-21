@@ -1,0 +1,42 @@
+Users:
+id - integer
+username - string
+password - string
+date_created - date
+date_modified - date
+first_name - string
+last_name_1 - string
+last_name_2 - string
+date_of_birth - date
+is_admin - integer
+status - string
+church_attending - string
+country - string
+hint_question - string
+hint_answer - string
+
+Requests:
+id - string
+title - string
+date_entered - date
+status - string
+group_id - integer
+user_id - integer
+summary - string
+is_public - integer
+resolution - string
+
+Groups:
+id - integer
+name - string
+admin - integer
+date_created - date
+status - string
+
+Comments:
+id - integer
+user_id - integer
+request_id - integer
+date_entered - date
+content - string
+status - string
