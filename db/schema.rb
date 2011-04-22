@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110421234239) do
+ActiveRecord::Schema.define(:version => 20110422014919) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
@@ -65,5 +65,7 @@ ActiveRecord::Schema.define(:version => 20110421234239) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "users", ["username"], :name => "index_users_on_username", :unique => true
 
 end
