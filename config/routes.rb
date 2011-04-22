@@ -1,4 +1,14 @@
 Sincesar::Application.routes.draw do
+  resources :request_types
+
+  resources :comments
+
+  resources :groups
+
+  resources :requests
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

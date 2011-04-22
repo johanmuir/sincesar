@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @request.title %>
+</p>
+
+<p>
+  <b>Grupo:</b>
+  <%= @request.group_id %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @request.user_id %>
+</p>
+
+<p>
+  <b>Peticion:</b>
+  <%= @request.content %>
+</p>
+
+<p>
+  <b>Resolucion:</b>
+  <%= @request.resolution %>
+</p>
+
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

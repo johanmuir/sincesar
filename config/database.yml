@@ -11,7 +11,7 @@ development:
   reconnect: false
   database: sincesar_development
   pool: 5
-  username: sincesar
+  username: root
   password: asdf1234
   socket: /var/run/mysqld/mysqld.sock
 
@@ -24,7 +24,7 @@ test:
   reconnect: false
   database: sincesar_test
   pool: 5
-  username: sincesar
+  username: root
   password: asdf1234
   socket: /var/run/mysqld/mysqld.sock
 
@@ -34,6 +34,6 @@ production:
   reconnect: false
   database: sincesar_production
   pool: 5
-  username: sincesar
+  username: root
   password: asdf1234
   socket: /var/run/mysqld/mysqld.sock

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Primer Apellido:</b>
+  <%= @user.first_last_name %>
+</p>
+
+<p>
+  <b>Segundo Apellido:</b>
+  <%= @user.second_last_name %>
+</p>
+
+<p>
+  <b>Fecha de Nacimiento:</b>
+  <%= @user.date_of_birth %>
+</p>
+
+<p>
+  <b>Is admin:</b>
+  <%= @user.is_admin %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @user.status %>
+</p>
+
+<p>
+  <b>Iglesia a la que asiste:</b>
+  <%= @user.church_attending %>
+</p>
+
+<p>
+  <b>Ciudad:</b>
+  <%= @user.country %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
